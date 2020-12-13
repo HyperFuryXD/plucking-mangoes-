@@ -27,6 +27,8 @@ function setup() {
 	mango1 = new Mango(675,500,20,20);
 	mango2 = new Mango(700,525,20,20);
 	mango3 = new Mango(725,475,20,20);
+	mango4 = new Mango(750,500,20,20);
+	mango5 = new Mango(650,525,20,20);
 
 
 	
@@ -38,13 +40,14 @@ function draw() {
   
   Engine.update(engine);
   background(0);
-  image(tree,650,400,200,300);
+  image(tree,605,400,200,300);
   ground.display();
   stone.display();
   boy.display();
 mango1.display();
 mango2.display();
 mango3.display();
+mango4.display();
 
 detectCollision(stone,mango1);
 detectCollision(stone,mango2);
