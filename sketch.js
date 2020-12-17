@@ -22,7 +22,7 @@ function setup() {
 
 	//Create the Bodies Here.
 	ground = new Ground(400,690,800,20);
-	stone = new Stone(110,630,50);
+	stone = new Stone(110,630,30);
 	boy = new Boy(stone.body,{x:110,y:630});
 	mango1 = new Mango(675,500,20,20);
 	mango2 = new Mango(700,525,20,20);
@@ -48,10 +48,13 @@ mango1.display();
 mango2.display();
 mango3.display();
 mango4.display();
+mango5.display();
 
 detectCollision(stone,mango1);
 detectCollision(stone,mango2);
 detectCollision(stone,mango3);
+detectCollision(stone,mango4);
+detectCollision(stone,mango5);
  
 }
 
